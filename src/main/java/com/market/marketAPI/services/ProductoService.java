@@ -3,14 +3,13 @@ package com.market.marketAPI.services;
 import com.market.marketAPI.models.Producto;
 import com.market.marketAPI.repositories.ProductoCrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProductosServices {
+public class ProductoService {
 
     @Autowired // se hace la inyeccion de dependencias para poder usar los métodos de la interfaz
     private ProductoCrudRepository productoCrudRepository; // se crea una variable de tipo ProductoCrudRepository para poder acceder a los métodos de la interfaz

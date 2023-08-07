@@ -1,7 +1,7 @@
 package com.market.marketAPI.controllers;
 
 import com.market.marketAPI.models.Producto;
-import com.market.marketAPI.services.ProductosServices;
+import com.market.marketAPI.services.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +13,7 @@ import java.util.Optional;
 public class ProductController {
 
     @Autowired // Conecta esta clase  con el servicio
-    ProductosServices productosServices; // Se crea una instancia del servicio para poder usar los metodos de jpa
+    ProductoService productosServices; // Se crea una instancia del servicio para poder usar los metodos de jpa
 
     @GetMapping("/all")
     public List<Producto> getAllProductos(){
