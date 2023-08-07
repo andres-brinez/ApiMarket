@@ -1,12 +1,12 @@
 package com.market.marketAPI.models;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.util.List;
 
+@Entity
+@Table(name = "clientes")
 public class Cliente {
 
     @Id
