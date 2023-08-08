@@ -19,6 +19,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //Dependencia agregada
 	runtimeOnly 'org.postgresql:postgresql' // dependencia para conectar la base de datos postgresql con spring boot, se agrega en runtime porque solo se necesita en tiempo de ejecucion
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation "io.springfox:springfox-boot-starter:3.0.0"
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0' // dependencia para documentar la api
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
